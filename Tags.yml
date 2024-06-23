@@ -1,0 +1,13 @@
+- name: Tags example
+  hosts: all
+  tasks:
+    - name: Hello Alfa Message 
+      debug:
+        msg: "Hello Alfa!"
+      tags:
+        - alfa
+    - name: Hello Beta Message 
+      debug:
+        msg: "Hello Beta!"
+      tags:
+        - beta
